@@ -1,36 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Figuras geometricas</title>
-</head>
-<body>
-    <h1>
-        Figuras geometricas
-    </h1>
-    <p>Java Script</p>
-    <section>
-        <h2>
-           Calcula el area y perimetro de un cuadrado 
-        </h2>
-        <form action="">
-            <label for="InputCuadrado">Escribe cuanto mide cada lado de tu cuadrado</label>
-            <input  id= "InputCuadrado" type="number" placeholder="parametro"/> 
-            <button type="button" onclick = "calcularPerimetroCuadrado()"> 
-                Calcular Perimetro 
-            </button>
-            <button type= "button" onclick = "calcularAreaCuadrado()">
-                Calcular Area
-            </button>
-        </form>
-    </section>
-
-    <script>
         //const perimetroCuadrado = ladoCuadrado * 4;
         //const areaCuadrado = ladoCuadrado * ladoCuadrado ;
-        /*console.log("hola")
+        /*
         console.group("Cuadrado")
         const ladoCuadrado = 5;
         console.log("Los lados del cuadrado miden: " + ladoCuadrado)
@@ -102,7 +72,9 @@
         console.log(`El altura del triangulo isoseles es ${alturaTrianguloIsosceles(5,5)}`)
 
         function calcularAreaCuadrado(){
+            // para leer el contenido html la etiqueta input cuadrado
             const input = document.getElementById("InputCuadrado");
+            // el valor del input cuadrado
             const value = input.value;
             const area = areaCuadradoFuncion(value);
             alert(area);
@@ -114,7 +86,3 @@
             alert(perimetro);
 
         }
-
-    </script>
-</body>
-</html>
